@@ -1,7 +1,7 @@
 <?php
 class OccupyNavPlugin extends Plugin {
-  function onStartShowHeader($action) {
-    $action->script('plugins/OccupyNav/Navigation/occupynet_nav.js');
+  function onStartShowBody($action) {
+    $action->script('https://nav.occupy.net/occupynet_nav.js');
     return true;
   }
 }
